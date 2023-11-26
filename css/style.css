@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(30deg, rgb(195, 33, 195), rgb(66, 176, 223));
+    background-size: 400% 400%;
+    animation: bodyBackground 5s alternate linear infinite;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+@keyframes bodyBackground {
+    0% {
+        background-position: left top;
+    }
+
+    100% {
+        background-position: right bottom;
+    }
+}
+
+form {
+    text-align: center;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    padding: 32px 8px;
+    background-color: rgba(255, 255, 255, 0.817);
+}
+
+form div {
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 12px;
+    max-width: 600px;
+    width: 90%;
+    padding: 12px 6px;
+    border: 1px solid rgb(126, 20, 126);
+    background-color: white;
+}
+
+form input {
+    max-width: 240px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 4px;
+}
+
+input[type="number"] {
+    display: block;
+    width: 20%;
+    margin: auto;
+    margin-top: 4px;
+}
+
+form>div>label:nth-child(1) {
+    display: block;
+}
+
+input[value='Yes'] {
+    margin-right: 50%;
+}
+
+form button {
+    width: calc(90% + 12px);
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 6px;
+    height: 5vh;
+    border: 1px solid rgb(126, 20, 126);
+}

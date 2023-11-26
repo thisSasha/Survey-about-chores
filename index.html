@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <link rel='stylesheet' href='./css/style.css'>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Опрос</title>
+</head>
+
+<body>
+    <form method="post" target="_blank"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYWqP0_XwWklao4KLji8vOBPBbhjGDSqIIS_AyrhoM9eD21g/formResponse">
+        <h1>Survey about chores</h1>
+        <div class="age">
+            <label for="age">How old are you?</label>
+            <input type="number" min="8" max="17" id="age" name="entry.772106203">
+        </div>
+
+        <div class="enjoy">
+            <label for="enjoy">What chore are you enjoy doing?</label>
+            <input type="text" name="entry.767739443" id="enjoy">
+        </div>
+
+        <div class="laundry">
+            <label>Do you like doing the laundry?</label>
+            <label for="laundry1">Yes</label>
+            <input type="radio" name="entry.474344027" id="laundry1" value="Yes">
+            <label for="laundry2">No</label>
+            <input type="radio" name="entry.474344027" id="laundry2" value="No">
+        </div>
+
+        <div class="parents">
+            <label for="parents">What your parents ask you to do?</label>
+            <input type="text" name="entry.2028500438" id="parents">
+        </div>
+
+        <div class="important">
+            <label>Do you think household chores are important?</label>
+            <label for="important1">Yes</label>
+            <input type="radio" name="entry.18033350" id="important1" value="Yes">
+            <label for="important2">No</label>
+            <input type="radio" name="entry.18033350" id="important2" value="No">
+        </div>
+
+        <div class="hate">
+            <label for="hate">What household chore are you hate doing?</label>
+            <input type="text" name="entry.1567805841" id="hate">
+        </div>
+
+        <div class="feed">
+            <label>Do you feed your pets?</label>
+            <label for="feed1">Yes</label>
+            <input type="radio" name="entry.1925066986" id="feed1" value="Yes">
+            <label for="feed2">No</label>
+            <input type="radio" name="entry.1925066986" id="feed2" value="No">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src='./js/mainScript.js' type="module"></script>
+</body>
+
+</html>
